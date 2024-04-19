@@ -26,10 +26,8 @@ void backtracking(int n, int startIndex){
         path.pop_back();
     }
 }
-/**
- * @brief original version 1.0
- *      回溯: 指定要拆分的数和起始索引,若path之和大于等于n,则进入临界条件
-*/
+
+/// @brief 回溯: 指定要拆分的数和起始索引,若path之和大于等于n,则进入临界条件
 void test1() {
     int n=6;
     backtracking(n, 1);
