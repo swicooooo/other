@@ -7,9 +7,9 @@ int partitionForLarge(int s[], int left, int right)
     int num = s[left];
     do
     {
-        while(s[j]<num && i<j) j--; // j指针右移，找到比num小的数
+        while(s[j]<num && i<j) j--; // j指针右移，找到比num大的数
         if(i<j) s[i++]=s[j];
-        while(s[i]>num && i<j) i++;  // i指针左移，找到比num大的数
+        while(s[i]>num && i<j) i++;  // i指针左移，找到比num小的数
         if(i<j) s[j--]=s[i];
     } while (i<j);
     s[i]=num;
